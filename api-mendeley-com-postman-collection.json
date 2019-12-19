@@ -1,0 +1,154 @@
+{
+    "id": "5f03178c4d8e18a9c458fc121a863c0a",
+    "name": "api.mendeley.com",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "9e3948287602de58d39347e7d84951bf",
+            "name": "<b>v1<\/b> Create a document from an uploaded file",
+            "url": "http:\/\/api.mendeley.com\/\/documents",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5f03178c4d8e18a9c458fc121a863c0a",
+            "rawModeData": ""
+        },
+        {
+            "id": "4afdf2e36019ef7dd9d172b2d6a87820",
+            "name": "<b>V1<\/b> - Get a list of catalog documents by filter",
+            "url": "http:\/\/api.mendeley.com\/\/catalog",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "arxiv",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "doi",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "isbn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "issn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pmid",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scopus",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filehash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "view",
+                    "description": "View",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5f03178c4d8e18a9c458fc121a863c0a",
+            "rawModeData": ""
+        },
+        {
+            "id": "08522259e76bf2f3477602f58e1e364e",
+            "name": "<b>V1<\/b> - Get a catalog document",
+            "url": "http:\/\/api.mendeley.com\/\/catalog\/{catalogId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "catalogId",
+                    "description": "Document ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "view",
+                    "description": "View",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "5f03178c4d8e18a9c458fc121a863c0a",
+            "rawModeData": ""
+        }
+    ]
+}
