@@ -1,0 +1,510 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1",
+        "title": "api.mendeley.com",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.mendeley.com\/"
+    ],
+    "paths": {
+        "\/documents": {
+            "post": {
+                "summary": "<b>v1<\/b> Create a document from an uploaded file",
+                "description": "",
+                "operationId": "CreateDocumentFromFileUpload",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "No response was specified",
+                        "content": {
+                            "application\/vnd.mendeley-document.1+json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/UserDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/catalog": {
+            "get": {
+                "summary": "<b>V1<\/b> - Get a list of catalog documents by filter",
+                "description": "",
+                "operationId": "GetCatalogueDocumentByFilter",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "arxiv",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "doi",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "isbn",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "issn",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "pmid",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "scopus",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filehash",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "view",
+                        "in": "query",
+                        "description": "View"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "No response was specified",
+                        "content": {
+                            "application\/vnd.mendeley-document.1+json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/UserDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/catalog\/{catalogId}": {
+            "get": {
+                "summary": "<b>V1<\/b> - Get a catalog document",
+                "description": "",
+                "operationId": "GetCatalogueDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "catalogId",
+                        "in": "path",
+                        "description": "Document ID"
+                    },
+                    {
+                        "name": "view",
+                        "in": "query",
+                        "description": "View"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "No response was specified",
+                        "content": {
+                            "application\/vnd.mendeley-document.1+json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/UserDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Person": {
+                "type": "object",
+                "properties": {
+                    "first_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserDocument": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "accessed": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "authored": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "authors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "chapter": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "citation_key": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "confirmed": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "day": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "department": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "edition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "editors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "file_attached": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "genre": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "group_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "hidden": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "institution": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "issue": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last_modified": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "month": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "pages": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "patent_application_number": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "patent_legal_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "patent_owner": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "profile_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "publisher": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "read": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "reprint_edition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "series": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "series_editor": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "short_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source_type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "starred": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "translators": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "user_context": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "volume": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "websites": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "year": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "tags": {
+                "type": "array"
+            },
+            "authors": {
+                "type": "array"
+            },
+            "editors": {
+                "type": "array"
+            },
+            "keywords": {
+                "type": "array"
+            },
+            "translators": {
+                "type": "array"
+            },
+            "websites": {
+                "type": "array"
+            },
+            "CatalogueDocument": {
+                "type": "object",
+                "properties": {
+                    "abstract": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "accessed": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "authors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "chapter": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "day": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "department": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "edition": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "editors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "file_attached": {
+                        "description": "",
+                        "type": "boolean"
+                    },
+                    "group_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "identifiers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "institution": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "issue": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "keywords": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "link": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "month": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "pages": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "publisher": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reader_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "reader_count_by_academic_status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reader_count_by_country": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "reader_count_by_subdiscipline": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "series": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "volume": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "websites": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "year": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}
