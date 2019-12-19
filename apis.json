@@ -1,0 +1,127 @@
+{
+    "name": "Mendeley",
+    "description": "Mendeley is a free reference manager and an academic social network. Manage your research, showcase your work, connect and collaborate with over six million researchers worldwide.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/436-mendeley.jpg",
+    "tags": [
+        "api lifeycle",
+        "api provider",
+        "api united kingdom",
+        "have api",
+        "have swagger",
+        "papers",
+        "target"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mendeley\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "api.mendeley.com",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/436-mendeley.jpg",
+            "humanURL": "http:\/\/mendeley.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/api-mendeley-com.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/api-mendeley-com-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/api-mendeley-com-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Mendeley",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/436-mendeley.jpg",
+            "humanURL": "http:\/\/mendeley.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/mendeley.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/mendeley-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/mendeley-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "https:\/\/api.mendeley.com"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.mendeley.com\/blog"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/www.mendeley.com\/blog\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/mendeley"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/mendeley"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/dev.mendeley.com\/"
+        },
+        {
+            "type": "Email",
+            "url": "office@mendeley.com"
+        },
+        {
+            "type": "Email",
+            "url": "complaints@mendeley.com"
+        },
+        {
+            "type": "Email",
+            "url": "info@mendeley.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/Mendeley"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/436-2019-09-04-04-25-10.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/436-2019-09-03-22-35-13.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/mendeleyAPI"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/mendeley_com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/mendeley.com\/"
+        }
+    ]
+}
