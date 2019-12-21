@@ -1,5 +1,5 @@
 {
-    "id": "5f03178c4d8e18a9c458fc121a863c0a",
+    "id": "67f40dac6e5c1023558ba5ce7bc135a7",
     "name": "api.mendeley.com",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "9e3948287602de58d39347e7d84951bf",
+            "id": "aefaa52e4f52e7c915cbe9d24e4b0495",
             "name": "<b>v1<\/b> Create a document from an uploaded file",
             "url": "http:\/\/api.mendeley.com\/\/documents",
             "description": "",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5f03178c4d8e18a9c458fc121a863c0a",
+            "collectionId": "67f40dac6e5c1023558ba5ce7bc135a7",
             "rawModeData": ""
         },
         {
-            "id": "4afdf2e36019ef7dd9d172b2d6a87820",
+            "id": "ccfb7775dfc5a0887fa0414ed4789417",
             "name": "<b>V1<\/b> - Get a list of catalog documents by filter",
             "url": "http:\/\/api.mendeley.com\/\/catalog",
             "description": "",
@@ -109,11 +109,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5f03178c4d8e18a9c458fc121a863c0a",
+            "collectionId": "67f40dac6e5c1023558ba5ce7bc135a7",
             "rawModeData": ""
         },
         {
-            "id": "08522259e76bf2f3477602f58e1e364e",
+            "id": "1181a545694a9a89014afd1869214603",
             "name": "<b>V1<\/b> - Get a catalog document",
             "url": "http:\/\/api.mendeley.com\/\/catalog\/{catalogId}",
             "description": "",
@@ -147,7 +147,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5f03178c4d8e18a9c458fc121a863c0a",
+            "collectionId": "67f40dac6e5c1023558ba5ce7bc135a7",
             "rawModeData": ""
         }
     ]
